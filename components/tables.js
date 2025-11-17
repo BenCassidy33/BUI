@@ -160,9 +160,3 @@ class BUI_TABLE extends HTMLElement {
     console.log(header, rows);
   }
 }
-
-window.customElements.define("bui-table-row", BUI_TABLE_ROW);
-window.customElements.define("bui-table", BUI_TABLE);
-
-const table_test = document.getElementById("table");
-table_test.render();
