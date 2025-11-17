@@ -1,5 +1,7 @@
 "use strict";
 
+import "./table.css"
+
 class BUI_TABLE_ROW extends HTMLElement {
   static observedAttributes = ["row-data", "row-seperator"];
 
@@ -161,3 +163,6 @@ class BUI_TABLE extends HTMLElement {
     console.log(header, rows);
   }
 }
+
+customElements.define("bui-table-row", BUI_TABLE_ROW);
+customElements.define("bui-table", BUI_TABLE);
