@@ -1,0 +1,15 @@
+@import url("../../themes/cyan.css");
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	font-family: "elm-sans", monospace;
+    background-color: var(--bg-main);
+}
+
+#welcome-text {
+	margin-top: 10vh;
+}
