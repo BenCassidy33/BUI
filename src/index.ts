@@ -1,5 +1,6 @@
 import type { BunFile } from "bun";
 import { Elysia } from "elysia";
+import { staticPlugin } from "@elysiajs/static";
 import path from "path";
 import esbuild from "esbuild";
 import { Logestic } from "logestic";
@@ -81,10 +82,6 @@ async function pack_and_serve_components(
 	return bundled_file;
 }
 
-function index() {
-	return "hello, index!";
-}
-
 interface QueryParams {
 	components?: string;
 	minify?: string;
@@ -92,7 +89,7 @@ interface QueryParams {
 
 const app = new Elysia()
 	.use(Logestic.preset("common"))
-	.get("/", index)
+	.use(staticPlugin({ prefix: "/", indexHTML: true }))
 	.get(
 		"/",
 		({ query }: { query: QueryParams }) => {
@@ -110,6 +107,21 @@ const app = new Elysia()
 			);
 		},
 		{},
+	)
+	.get(
+		"/themes/:theme",
+		async ({ params }: { params: { theme: string } }) => {
+			const theme_file = Bun.file(`./themes/${params.theme}`);
+			if ((await theme_file.exists()) === false) {
+				throw new Error("Theme not found!");
+			}
+
+			return new Response(await theme_file.arrayBuffer(), {
+				headers: {
+					"Content-Type": "text/css",
+				},
+			});
+		},
 	);
 
 app.listen(3000, () => {

@@ -1,0 +1,55 @@
+@import url("http://localhost:3000/themes/cyan.css");
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap");
+
+html, body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-family: monospace;
+    background-color: var(--bg-main);
+    color: var(--text-color)
+}
+
+#welcome-text {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+    font-size: 5vh;
+}
+
+#link-builder {
+    background-color: var(--bg-surface);
+    border-radius: var(--rounding);
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-highlight);
+    border-radius: var(--rounding);
+    width: fit-content;
+    height: 5vh;
+}
+
+#link-text {
+    color: var(--text-color);
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#copy-button {
+    height: 80%;
+    aspect-ratio: 1;
+    align-self: center;
+    margin-right: 20px;
+}

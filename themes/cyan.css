@@ -1,4 +1,13 @@
 :root {
-    --bg-main: hsl(240, 60%, 1%)
-    --primary: hsl(182, 86%, 50%)
+	--bg-main: hsl(0, 0%, 0%);
+    --bg-surface: hsl(0, 0%, 5%);
+    --bg-highlight: hsl(0, 0%, 10%);
+
+	--primary: hsl(182, 50%, 50%);
+	--secondary: hsl(182, 86%, 25%);
+
+	--text-color: hsl(246, 76%, 95%);
+
+    --rounding: 10px;
+    --corner-shape: squircle;
 }
