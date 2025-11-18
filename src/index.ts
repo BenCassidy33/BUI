@@ -52,7 +52,7 @@ async function pack_and_serve_components(
 		return Bun.file(filepath);
 	}
 
-	const outfile_path = `./server/dist/components/${hash}${minify ? ".min" : ""}.js`;
+	const outfile_path = `./dist/components/${hash}${minify ? ".min" : ""}.js`;
 
 	let js_code = "";
 
@@ -91,7 +91,7 @@ const app = new Elysia()
 	.use(Logestic.preset("common"))
 	.use(staticPlugin({ prefix: "/", indexHTML: true }))
 	.get(
-		"/",
+		"/dist",
 		({ query }: { query: QueryParams }) => {
 			const components = query.components;
 
