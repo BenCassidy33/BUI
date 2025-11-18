@@ -4,12 +4,12 @@ Inspired by shadcn/ui, designed to be used with plain HTML and minimal JavaScrip
 
 Components Implemented:
 
-| Component | Implemented?  |
-| --------- | ------------- |
-| Table     | Needs Styling |
-| Sidebar   | In Progress   |
-| Card      | ❌            |
-| Graph     | ❌            |
+| Component | Implemented? | Styled? |
+| --------- | ------------ | ------- |
+| Table     | ✅           | ❌      |
+| Sidebar   | In Progress  | ❌      |
+| Card      | ❌           | ❌      |
+| Graph     | ❌           | ❌      |
 
 Run by using:
 
