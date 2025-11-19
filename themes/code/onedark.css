@@ -1,0 +1,15 @@
+:root {
+	/* code colors */
+	--code-keyword: hsl(286, 60%, 67%); /* purple - return, const, if */
+	--code-string: hsl(95, 38%, 62%); /* green - "strings" */
+	--code-number: hsl(29, 54%, 61%); /* orange - 123 */
+	--code-function: hsl(207, 82%, 66%); /* blue - functionName() */
+	--code-variable: hsl(220, 14%, 71%); /* light gray - variables */
+	--code-property: hsl(187, 47%, 55%); /* cyan - object.property */
+	--code-operator: hsl(187, 47%, 55%); /* cyan - =, +, - */
+	--code-comment: hsl(220, 10%, 40%); /* gray - // comments */
+	--code-punctuation: hsl(220, 14%, 71%); /* light gray - ;, {, } */
+	--code-tag: hsl(355, 65%, 65%); /* red - <div> */
+	--code-attribute: hsl(29, 54%, 61%); /* orange - href="" */
+	--text-color: hsl(220, 14%, 71%); /* default text */
+}

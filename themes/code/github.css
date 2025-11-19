@@ -1,0 +1,16 @@
+:root {
+	/* code colors (GitHub Dark style — HEX) */
+
+	--code-keyword: #f97583; /* red-pink keywords */
+	--code-string: #a5d6ff; /* soft icy blue strings */
+	--code-number: #d2a8ff; /* lavender numbers / constants */
+	--code-function: #79c0ff; /* bright sky blue function names */
+	--code-variable: #c9d1d9; /* light gray variables */
+	--code-property: #7ee787; /* greenish object properties / types */
+	--code-operator: #6e7681; /* cool gray operators */
+	--code-comment: #8b949e; /* muted gray comments */
+	--code-punctuation: #6e7681; /* punctuation/brackets */
+	--code-tag: #f7727b; /* red HTML tags (slightly softer than keyword) */
+	--code-attribute: #ce9178; /* warm orange attributes */
+	--text-color: #c9d1d9; /* default GitHub foreground text */
+}
