@@ -16,3 +16,5 @@ Run by using:
 ```bash
 bun run server.ts
 ```
+
+Note: Code component uses [hljs](highlightjs.org)
