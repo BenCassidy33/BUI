@@ -105,6 +105,13 @@ body {
 
 #component-picker {
 	margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.checkbox-container > input {
+    margin: 0;
 }
 
 .contentblock {
@@ -138,3 +145,4 @@ body {
 	cursor: pointer;
     text-decoration: underline;
 }
+

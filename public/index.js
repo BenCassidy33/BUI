@@ -19,7 +19,7 @@ copy_button.addEventListener("click", () => {
 	navigator.clipboard.writeText(link_text.innerText);
 });
 
-const all_components = ["Table", "Card", "Alert", "Tooltip", "Code"];
+const all_components = ["Table", "Card", "Alert", "Tooltip", "Code", "Navbar"];
 
 for (const component of all_components) {
 	let html = `
